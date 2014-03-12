@@ -1,0 +1,43 @@
+{
+  "name": "grunt-docarray",
+  "description": "A Grunt plugin for converting an HTML document to a Javascript array.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jrbarron/grunt-docarray",
+  "author": {
+    "name": "Jason Barron",
+    "email": "jason@cutehacks.com",
+    "url": "http://cutehacks.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jrbarron/grunt-docarray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrbarron/grunt-docarray/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jrbarron/grunt-docarray/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
