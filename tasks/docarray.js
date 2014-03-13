@@ -59,7 +59,7 @@ module.exports = function(grunt) {
                     }
 
                     if (!skip) {
-                        line = line.replace(/\'/g, '&#39;');
+                        line = line.replace(/\'/g, '\\\'');
                         content += '    \'' + line + '\',\n';
                     }
                     newline = current.indexOf('\n');
