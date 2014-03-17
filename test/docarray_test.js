@@ -31,7 +31,7 @@ exports.docarray = {
     test.expect(1);
 
     var ink = require('../tmp/ink.js');
-    test.notStrictEqual(ink.ink.join('\n'), '');
+    test.notStrictEqual(ink.ink, '');
     test.done();
   }
 };
