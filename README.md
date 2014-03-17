@@ -42,11 +42,11 @@ Would generate the following Javascript file:
 ### basic.js
 ```js
 var basic = [
-    '<html>'
-    '<head></head>'
-    '<body>'
-    '   <p>This is content!</p>'
-    '</body>'
+    '<html>',
+    '<head></head>',
+    '<body>',
+    '   <p>This is content!</p>',
+    '</body>',
 ];
 ```
 
@@ -95,19 +95,22 @@ Indicates if each variable should have .join(options.joinSeparator) appended to 
 
 ```js
 var basic = [
-    '<html>'
-    '<head></head>'
-    '<body>'
-    '   <p>This is content!</p>'
-    '</body>'
-];.join('\n');
+    '<html>',
+    '<head></head>',
+    '<body>',
+    '   <p>This is content!</p>',
+    '</body>',
+].join('\n');
 ```
 
 #### options.joinSeparator
 Type: `String`
-Default value: `\n`
+Default value: `\\n`
 
-The string passed to .join() if options.addJoin is true. If addJoin is false, this is ignored.
+The string passed to .join() if options.addJoin is true. If options.addJoin is false, this is ignored.
+
+**NOTE** If the string contains a backslash (such as a newline character), the backslash must be escaped with an
+additional backslash.
 
 #### options.header
 Type: `String`
@@ -125,7 +128,7 @@ and the result is written to a Javascript file.
 grunt.initConfig({
   docarray: {
     files: {
-      'dist/js/emails.js': ['emails/welcome.html', 'emails/resetpassword']
+      'dist/js/emails.js': ['emails/welcome.html', 'emails/resetpassword.html']
     },
   },
 });
