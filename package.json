@@ -1,7 +1,7 @@
 {
   "name": "grunt-docarray",
   "description": "A Grunt plugin for converting an HTML document to a Javascript array.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jrbarron/grunt-docarray",
   "author": {
     "name": "Jason Barron",

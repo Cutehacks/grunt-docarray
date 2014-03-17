@@ -140,6 +140,10 @@ functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+### 0.2.0
+
+* Add support for generating .join()
+
 ### 0.1.0
 
 * Initial Release
